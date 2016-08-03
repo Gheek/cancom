@@ -1,40 +1,24 @@
 import serial
 from .. import can
 
-=======
-from .. import can
 
-
->>>>>>> canard-2.1-github
 class CantactDev:
     def __init__(self, port):
         self.ser = serial.Serial(port)
 
     def start(self):
-        self.ser.write('O\r')
+        self.ser.write('O\r'.encode())
 
     def stop(self):
-        self.ser.write('C\r')
+        self.ser.write('C\r'.encode())
 
     def set_bitrate(self, bitrate):
-        if bitrate == 10000:
-            self.ser.write('S0\r')
-        elif bitrate == 20000:
-            self.ser.write('S1\r')
-        elif bitrate == 50000:
-            self.ser.write('S2\r')
-        elif bitrate == 100000:
-            self.ser.write('S3\r')
-        elif bitrate == 125000:
-            self.ser.write('S4\r')
+        if bitrate == 125000:
+            self.ser.write('S0\r'.encode())
         elif bitrate == 250000:
-            self.ser.write('S5\r')
+            self.ser.write('S1\r'.encode())
         elif bitrate == 500000:
-            self.ser.write('S6\r')
-        elif bitrate == 750000:
-            self.ser.write('S7\r')
-        elif bitrate == 1000000:
-            self.ser.write('S8\r')
+            self.ser.write('S2\r'.encode())
         else:
             raise ValueError("Bitrate not supported")
 
@@ -71,4 +55,4 @@ class CantactDev:
         tx_str = tx_str + '\r'
 
         # send it
-        self.ser.write(tx_str)
+        self.ser.write(tx_str.encode())
