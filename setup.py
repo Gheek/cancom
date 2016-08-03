@@ -1,13 +1,13 @@
 from distutils.core import setup
 
 setup(
-    name='CANard',
-    version='0.2.5',
+    name='cancom',
+    version='0.1.0',
     author='Kevin Lamshoeft',
     author_email='post@lamshoft.de',
-    packages=['canard', 'canard.test', 'canard.hw', 'canard.utils', 'canard.proto'],
+    packages=['cancom', 'cancom.test', 'cancom.hw', 'cancom.utils', 'cancom.proto'],
     scripts=[],
-    url='https://github.com/Gheek/CANard',
+    url='https://github.com/Gheek/cancom',
     license='GPLv3',
     description='Library for interacting with Controller Area Network (CAN)',
     long_description=open('README.rst').read(),

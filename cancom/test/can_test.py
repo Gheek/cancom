@@ -1,4 +1,4 @@
-import canard.can as can
+import cancom.can as can
 import unittest
 
 class CanTest(unittest.TestCase):

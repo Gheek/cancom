@@ -1,4 +1,4 @@
-from canard import can
+from cancom import can
 import multiprocessing
 
 try:

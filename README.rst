@@ -1,16 +1,16 @@
 ======
-CANard
+CANcom
 ======
 
-CANard is a library for dealing with Controller Area Network (CAN) data from
-Python.
-This is a fork which integrates reported bug fixes and pull requests of the base rep and
+CANcom is a library for dealing with Controller Area Network (CAN) data from
+Python and is based on cancom.
+This is essentially a fork which integrates reported bug fixes and pull requests of the base rep and
 intends to be always 'up to date'.
 
 Using a CANtact
 ===============
 
-The CANtact_ tool is directly supported by CANard. Using it
+The CANtact_ tool is directly supported by cancom. Using it
 requires pySerial, which can be installed with pip::
 
     pip install pyserial
@@ -24,8 +24,8 @@ This examples goes on comfort bus and prints received messages:
 
 .. code:: python
 
-    from canard import can
-    from canard.hw import cantact
+    from cancom import can
+    from cancom.hw import cantact
 
     dev = cantact.CantactDev("/dev/ttyACM0")
     dev.set_bitrate(100000)
@@ -74,8 +74,8 @@ The device can now be accessed as a ``SocketCanDev``. This examples goes on bus 
 
 .. code:: python
 
-    from canard import can
-    from canard.hw import socketcan
+    from cancom import can
+    from cancom.hw import socketcan
 
     dev = socketcan.SocketCanDev("can0")
 

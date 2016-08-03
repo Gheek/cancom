@@ -1,7 +1,7 @@
 import sys
 
-from canard.proto.uds import UdsInterface
-from canard.hw.socketcan import SocketCanDev
+from cancom.proto.uds import UdsInterface
+from cancom.hw.socketcan import SocketCanDev
 
 d = SocketCanDev('vcan0')
 d.start()

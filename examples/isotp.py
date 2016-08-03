@@ -1,5 +1,5 @@
-from canard.proto.isotp import IsoTpProtocol, IsoTpMessage
-from canard import can 
+from cancom.proto.isotp import IsoTpProtocol, IsoTpMessage
+from cancom import can
 
 p = IsoTpProtocol()
 

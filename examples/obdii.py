@@ -1,7 +1,7 @@
-from canard.proto.obdii import ObdInterface
+from cancom.proto.obdii import ObdInterface
 
-from canard.hw.cantact import CantactDev
-from canard.hw.loopback import LoopbackDev
+from cancom.hw.cantact import CantactDev
+from cancom.hw.loopback import LoopbackDev
 import sys
 
 #d = LoopbackDev()

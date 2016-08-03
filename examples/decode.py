@@ -1,6 +1,6 @@
-from canard import can, bus
-from canard.file import jsondb
-from canard.hw import socketcan
+from cancom import can, bus
+from cancom.file import jsondb
+from cancom.hw import socketcan
 
 parser = jsondb.JsonDbParser()
 b = parser.parse('example_db.json')

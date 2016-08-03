@@ -1,5 +1,5 @@
-from canard import can 
-from canard.proto.isotp import IsoTpProtocol, IsoTpMessage
+from cancom import can
+from cancom.proto.isotp import IsoTpProtocol, IsoTpMessage
 import time
 
 class ObdInterface(IsoTpProtocol):

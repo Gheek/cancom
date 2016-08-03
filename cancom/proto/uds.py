@@ -1,6 +1,6 @@
-from canard import can
-from canard.proto.isotp import IsoTpProtocol, IsoTpMessage
-from canard.utils.queue import CanQueue
+from cancom import can
+from cancom.proto.isotp import IsoTpProtocol, IsoTpMessage
+from cancom.utils.queue import CanQueue
 import time
 
 class UdsInterface(IsoTpProtocol):

@@ -1,5 +1,5 @@
-from canard import can
-from canard.hw import socketcan
+from cancom import can
+from cancom.hw import socketcan
 
 dev = socketcan.SocketCanDev("vcan0")
 

@@ -1,6 +1,6 @@
-from canard import can
-from canard.hw import cantact
-from canard.utils.queue import CanQueue
+from cancom import can
+from cancom.hw import cantact
+from cancom.utils.queue import CanQueue
 import time
 import sys
 
