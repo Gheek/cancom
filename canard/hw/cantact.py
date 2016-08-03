@@ -1,8 +1,11 @@
 import serial
-import io
-
 from .. import can
 
+=======
+from .. import can
+
+
+>>>>>>> canard-2.1-github
 class CantactDev:
     def __init__(self, port):
         self.ser = serial.Serial(port)
