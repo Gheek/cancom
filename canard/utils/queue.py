@@ -29,7 +29,7 @@ class CanQueue:
     def send(self, msg):
         self.send_queue.put(msg)
 
-    def recv(self, timeout=1, filter=None):
+    def recv(self, timeout=None, filter=None):
         try:
             start_time = time.time()
             while True:
