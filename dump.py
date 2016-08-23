@@ -1,8 +1,13 @@
-from cancom import can
-from cancom.hw import socketcan
+from cancom.hw import cantact
 
-dev = socketcan.SocketCanDev("vcan0")
+# default value (Ubuntu) for first cantact device
+dev = cantact.CantactDev("/dev/ACM0")
 
+# comfort CAN
+dev.set_bitrate(100000)
+
+# start cantact
 dev.start()
+
 while True:
     print(dev.recv())
